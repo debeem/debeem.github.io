@@ -1,0 +1,176 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>CallbackModels | debeem-wallet - v1.0.42</title><meta name="description" content="Documentation for debeem-wallet"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><link rel="stylesheet" href="../assets/custom.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><link rel="stylesheet" href="../assets/style/category-nav.css"/><style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #4fd8eb;
+    --md-sys-color-on-primary: #00363d;
+    --md-sys-color-primary-container: #004f58;
+    --md-sys-color-on-primary-container: #97f0ff;
+    --md-sys-color-secondary: #b1cbd0;
+    --md-sys-color-on-secondary: #1c3438;
+    --md-sys-color-secondary-container: #334b4f;
+    --md-sys-color-on-secondary-container: #cde7ec;
+    --md-sys-color-tertiary: #bac6ea;
+    --md-sys-color-on-tertiary: #24304d;
+    --md-sys-color-tertiary-container: #3b4664;
+    --md-sys-color-on-tertiary-container: #dae2ff;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffb4ab;
+    --md-sys-color-background: #191c1d;
+    --md-sys-color-on-background: #e1e3e3;
+    --md-sys-color-surface: #191c1d;
+    --md-sys-color-on-surface: #e1e3e3;
+    --md-sys-color-surface-variant: #3f484a;
+    --md-sys-color-on-surface-variant: #bfc8ca;
+    --md-sys-color-outline: #899294;
+    --md-sys-color-outline-variant: #3f484a;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #e1e3e3;
+    --md-sys-color-inverse-on-surface: #2e3132;
+    --md-sys-color-inverse-primary: #006874;
+    --md-sys-color-surface-dim: #101415;
+    --md-sys-color-surface-bright: #363a3a;
+    --md-sys-color-surface-container-lowest: #0b0f0f;
+    --md-sys-color-surface-container-low: #191c1d;
+    --md-sys-color-surface-container: #1d2021;
+    --md-sys-color-surface-container-high: #272b2b;
+    --md-sys-color-surface-container-highest: #323536
+  }
+}
+:root[data-theme="dark"] {
+  --md-sys-color-primary: #4fd8eb;
+  --md-sys-color-on-primary: #00363d;
+  --md-sys-color-primary-container: #004f58;
+  --md-sys-color-on-primary-container: #97f0ff;
+  --md-sys-color-secondary: #b1cbd0;
+  --md-sys-color-on-secondary: #1c3438;
+  --md-sys-color-secondary-container: #334b4f;
+  --md-sys-color-on-secondary-container: #cde7ec;
+  --md-sys-color-tertiary: #bac6ea;
+  --md-sys-color-on-tertiary: #24304d;
+  --md-sys-color-tertiary-container: #3b4664;
+  --md-sys-color-on-tertiary-container: #dae2ff;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffb4ab;
+  --md-sys-color-background: #191c1d;
+  --md-sys-color-on-background: #e1e3e3;
+  --md-sys-color-surface: #191c1d;
+  --md-sys-color-on-surface: #e1e3e3;
+  --md-sys-color-surface-variant: #3f484a;
+  --md-sys-color-on-surface-variant: #bfc8ca;
+  --md-sys-color-outline: #899294;
+  --md-sys-color-outline-variant: #3f484a;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #e1e3e3;
+  --md-sys-color-inverse-on-surface: #2e3132;
+  --md-sys-color-inverse-primary: #006874;
+  --md-sys-color-surface-dim: #101415;
+  --md-sys-color-surface-bright: #363a3a;
+  --md-sys-color-surface-container-lowest: #0b0f0f;
+  --md-sys-color-surface-container-low: #191c1d;
+  --md-sys-color-surface-container: #1d2021;
+  --md-sys-color-surface-container-high: #272b2b;
+  --md-sys-color-surface-container-highest: #323536
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --md-sys-color-primary: #006874;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #97f0ff;
+    --md-sys-color-on-primary-container: #001f24;
+    --md-sys-color-secondary: #4a6267;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #cde7ec;
+    --md-sys-color-on-secondary-container: #051f23;
+    --md-sys-color-tertiary: #525e7d;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #dae2ff;
+    --md-sys-color-on-tertiary-container: #0e1b37;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-background: #fafdfd;
+    --md-sys-color-on-background: #191c1d;
+    --md-sys-color-surface: #fafdfd;
+    --md-sys-color-on-surface: #191c1d;
+    --md-sys-color-surface-variant: #dbe4e6;
+    --md-sys-color-on-surface-variant: #3f484a;
+    --md-sys-color-outline: #6f797a;
+    --md-sys-color-outline-variant: #bfc8ca;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #2e3132;
+    --md-sys-color-inverse-on-surface: #eff1f1;
+    --md-sys-color-inverse-primary: #4fd8eb;
+    --md-sys-color-surface-dim: #d8dadb;
+    --md-sys-color-surface-bright: #f8fafa;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #f2f4f4;
+    --md-sys-color-surface-container: #eceeef;
+    --md-sys-color-surface-container-high: #e6e8e9;
+    --md-sys-color-surface-container-highest: #e1e3e3
+  }
+}
+:root[data-theme="light"] {
+  --md-sys-color-primary: #006874;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #97f0ff;
+  --md-sys-color-on-primary-container: #001f24;
+  --md-sys-color-secondary: #4a6267;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #cde7ec;
+  --md-sys-color-on-secondary-container: #051f23;
+  --md-sys-color-tertiary: #525e7d;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #dae2ff;
+  --md-sys-color-on-tertiary-container: #0e1b37;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #fafdfd;
+  --md-sys-color-on-background: #191c1d;
+  --md-sys-color-surface: #fafdfd;
+  --md-sys-color-on-surface: #191c1d;
+  --md-sys-color-surface-variant: #dbe4e6;
+  --md-sys-color-on-surface-variant: #3f484a;
+  --md-sys-color-outline: #6f797a;
+  --md-sys-color-outline-variant: #bfc8ca;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #2e3132;
+  --md-sys-color-inverse-on-surface: #eff1f1;
+  --md-sys-color-inverse-primary: #4fd8eb;
+  --md-sys-color-surface-dim: #d8dadb;
+  --md-sys-color-surface-bright: #f8fafa;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f2f4f4;
+  --md-sys-color-surface-container: #eceeef;
+  --md-sys-color-surface-container-high: #e6e8e9;
+  --md-sys-color-surface-container-highest: #e1e3e3
+}
+</style><link rel="stylesheet" href="../assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar tsd-navigation__header__toolbar"><div class="tsd-toolbar-contents container"><a href="../index.html" class="title">debeem-wallet</a><div class="tsd-navigation__header__toolbar__right"><div id="tsd-toolbar-links"></div><div id="tsd-navigation-theme" class="tsd-navigation__header__toolbar__theme"><div class="theme-normal svg-22"><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" p-id="4180" width="200" height="200"><path d="M512 938.666667c235.648 0 426.666667-191.018667 426.666667-426.666667S747.648 85.333333 512 85.333333 85.333333 276.352 85.333333 512s191.018667 426.666667 426.666667 426.666667z m0-64v-725.333334a362.666667 362.666667 0 0 1 0 725.333334z" fill="currentColor" p-id="4181"></path></svg></div><div class="theme-os svg-20"><svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" p-id="5207" width="200" height="200"><path d="M338.488889 617.244444h-28.444445l-19.911111-54.044444H210.488889l-19.911111 54.044444h-28.444445l73.955556-193.422222h25.6l76.8 193.422222zM284.444444 540.444444l-28.444444-79.644444-2.844444-14.222222-2.844445 14.222222-28.444444 79.644444H284.444444zM509.155556 537.6c0 54.044444-25.6 82.488889-73.955556 82.488889-48.355556 0-71.111111-25.6-71.111111-79.644445v-119.466666h25.6v116.622222c0 39.822222 17.066667 59.733333 48.355555 59.733333s48.355556-19.911111 48.355556-56.888889v-119.466666h25.6l-2.844444 116.622222zM674.133333 443.733333h-56.888889v173.511111h-25.6v-173.511111h-54.044444v-22.755555h136.533333zM676.977778 520.533333c0-31.288889 8.533333-56.888889 25.6-73.955555 17.066667-19.911111 39.822222-28.444444 68.266666-28.444445 25.6 0 48.355556 8.533333 65.422223 28.444445s25.6 42.666667 25.6 71.111111c0 31.288889-8.533333 56.888889-25.6 73.955555-17.066667 19.911111-39.822222 28.444444-68.266667 28.444445s-48.355556-8.533333-65.422222-28.444445c-17.066667-17.066667-25.6-39.822222-25.6-71.111111z m28.444444 0c0 22.755556 5.688889 42.666667 17.066667 56.888889 11.377778 14.222222 28.444444 22.755556 48.355555 22.755556s36.977778-5.688889 48.355556-19.911111c11.377778-14.222222 17.066667-31.288889 17.066667-56.888889 0-25.6-5.688889-45.511111-17.066667-56.888889-11.377778-14.222222-28.444444-19.911111-48.355556-19.911111s-36.977778 8.533333-48.355555 22.755555c-11.377778 8.533333-17.066667 28.444444-17.066667 51.2z" fill="currentColor" p-id="5208"></path><path d="M992.711111 520.533333c0 133.688889-54.044444 253.155556-142.222222 341.333334-88.177778 88.177778-207.644444 142.222222-338.488889 142.222222s-253.155556-54.044444-338.488889-142.222222-142.222222-207.644444-142.222222-341.333334 54.044444-253.155556 142.222222-341.333333c88.177778-88.177778 207.644444-142.222222 338.488889-142.222222s253.155556 54.044444 338.488889 142.222222 142.222222 207.644444 142.222222 341.333333z m-173.511111 307.2c79.644444-79.644444 128-187.733333 128-307.2s-48.355556-227.555556-128-307.2S634.311111 85.333333 512 85.333333c-119.466667 0-227.555556 48.355556-307.2 128-76.8 76.8-125.155556 184.888889-125.155556 304.355556s48.355556 227.555556 128 307.2c79.644444 79.644444 187.733333 128 307.2 128s227.555556-48.355556 304.355556-125.155556z" fill="currentColor" p-id="5209"></path></svg></div></div></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb"><li><a href="../index.html">debeem-wallet</a></li><li><a href="CallbackModels.html">CallbackModels</a></li></ul><h1>Module CallbackModels<code class="tsd-tag ts-flagInterface">Interface</code> </h1></div><section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography"><h4>Remark</h4><p>Definition of data models</p>
+</div></section><section class="tsd-panel-group tsd-index-group"><section class="tsd-panel tsd-index-panel"><h3 class="tsd-index-heading uppercase">Index</h3><section class="tsd-index-section"><h3 class="tsd-index-heading">Interfaces</h3><div class="tsd-index-list"><a href="../interfaces/CallbackModels.CallbackModels.html" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="assets/icons.svg#icon-256"></use></svg><span>Callback<wbr/>Models</span></a>
+</div></section></section></section></div><div class="col-sidebar"><div class="page-menu"></div><div class="site-menu"><nav class="tsd-navigation"><div class="tsd-navigation__toolbar-box"><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base=".."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="../index.html" class="title">debeem-wallet - v1.0.42</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header></div><div class="tsd-navigation__main"><h2 class="tsd-navigation__title"><a href="../index.html">CONTENTS</a></h2><div class="tsd-navigation__category"><h2 class="tsd-navigation__category__title"><span>Configuration</span></h2><ul class="tsd-navigation__category__links"><li><a href="config_functions.html" class="tsd-navigation__category__link">config functions</a></li></ul></div><div class="tsd-navigation__category"><h2 class="tsd-navigation__category__title"><span>Wallet Services</span></h2><ul class="tsd-navigation__category__links"><li><a href="WalletAccount.html" class="tsd-navigation__category__link">WalletAccount</a></li><li><a href="WalletFactory.html" class="tsd-navigation__category__link">WalletFactory</a></li><li><a href="WalletNFT.html" class="tsd-navigation__category__link">WalletNFT</a></li><li><a href="WalletTransaction.html" class="tsd-navigation__category__link">WalletTransaction</a></li></ul></div><div class="tsd-navigation__category"><h2 class="tsd-navigation__category__title"><span>Storage Services</span></h2><ul class="tsd-navigation__category__links"><li><a href="AbstractStorageService.html" class="tsd-navigation__category__link">AbstractStorageService</a></li><li><a href="BasicStorageService.html" class="tsd-navigation__category__link">BasicStorageService</a></li><li><a href="ChainStorageService.html" class="tsd-navigation__category__link">ChainStorageService</a></li><li><a href="IStorageService.html" class="tsd-navigation__category__link">IStorageService</a></li><li><a href="SysUserStorageService.html" class="tsd-navigation__category__link">SysUserStorageService</a></li><li><a href="TokenStorageService.html" class="tsd-navigation__category__link">TokenStorageService</a></li><li><a href="WalletStorageService.html" class="tsd-navigation__category__link">WalletStorageService</a></li></ul></div><div class="tsd-navigation__category"><h2 class="tsd-navigation__category__title"><span>Chain Services</span></h2><ul class="tsd-navigation__category__links"><li><a href="ChainService.html" class="tsd-navigation__category__link">ChainService</a></li></ul></div><div class="tsd-navigation__category"><h2 class="tsd-navigation__category__title"><span>Token Services</span></h2><ul class="tsd-navigation__category__links"><li><a href="TokenService.html" class="tsd-navigation__category__link">TokenService</a></li></ul></div><div class="tsd-navigation__category"><h2 class="tsd-navigation__category__title"><span>Data Models</span></h2><ul class="tsd-navigation__category__links"><li><a href="ABIModels.html" class="tsd-navigation__category__link">ABIModels</a></li><li><a href="CallbackModels.html" class="current tsd-navigation__category__link">CallbackModels</a></li><li><a href="NetworkModels.html" class="tsd-navigation__category__link">NetworkModels</a></li><li><a href="TokenModels.html" class="tsd-navigation__category__link">TokenModels</a></li><li><a href="TransactionModels.html" class="tsd-navigation__category__link">TransactionModels</a></li></ul></div><div class="tsd-navigation__category"><h2 class="tsd-navigation__category__title"><span>Storage Entities</span></h2><ul class="tsd-navigation__category__links"><li><a href="ChainEntity.html" class="tsd-navigation__category__link">ChainEntity</a></li><li><a href="StorageEntity.html" class="tsd-navigation__category__link">StorageEntity</a></li><li><a href="SysUserEntity.html" class="tsd-navigation__category__link">SysUserEntity</a></li><li><a href="TokenEntityItem.html" class="tsd-navigation__category__link">TokenEntityItem</a></li></ul></div></div></nav></div></div></div><div class="overlay"></div><script src="../assets/lib/category-nav.js"></script><script>
+          try {
+            const generateLinkElement = document.querySelector(".tsd-generator a");
+            const link = document.createElement("a");
+            Object.assign(link, {
+              href: "https://github.com/dmnsgn/typedoc-material-theme",
+              target: "_blank",
+              rel: "noreferrer",
+              innerText: "typedoc-material-theme."
+            });
+            generateLinkElement.insertAdjacentElement("afterend", link);
+            generateLinkElement.insertAdjacentText("afterend", " with ");
+          } catch (error) {
+
+          }
+        </script></body></html>
